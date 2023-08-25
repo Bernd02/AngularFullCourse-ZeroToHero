@@ -8,21 +8,21 @@ import { trigger } from '@angular/animations';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // String Interpolation
+  // # String Interpolation
   message: string = "Message from Typescript Component File";
 
-  // Property Binding
+  // # Property Binding
   imgUrl: string = "https://chocolates.com.pe/wp-content/uploads/2019/02/ole-ole.png";
 
-  // Class Binding
+  // # Class Binding
   trueFalse: boolean = false;
 
-  // Event Binding
+  // # Event Binding
   buttonClick(): void {
     console.log("Ole Ole");
   }
 
-  // Event Filtering
+  // # Event Filtering
   onKeyUp(eventObject: any) {
     if (eventObject.keyCode === 13) {
       console.log("Enter key pressed");
@@ -33,7 +33,7 @@ export class AppComponent {
     console.log("Enter key pressed");
   }
 
-  // Template Variable
+  // # Template Variable
   // js-manier
   onKeyUp3(event: any) {
     // Waarde van input-tag verkrijgen
@@ -46,6 +46,8 @@ export class AppComponent {
     console.log(inputWaarde.value);
   }
 
+  // # Two-way DataBinding
+  userName!: string;
 
 
 }
