@@ -1,5 +1,6 @@
 import { Component, ViewChild, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { PostComponent } from './post/post.component';
+import { trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -7,34 +8,30 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngIntro';
-  parentMessage: string = "Message changed";
+  // String Interpolation
+  message: string = "Message from Typescript Component File";
 
-  // --------------------------------------------------
-  // Property van Child inlezen
-  // > Deze methode geeft een ERROR!
-  // > Volgens mij is dit bad-practise
-  // > Oplossing = ChangeDetectorRef injecteren
-  // @ViewChild(PostComponent) childComp!: PostComponent;
-  // message!: string;
-  // ngAfterViewInit(): void {
-  //   // console.log(this.childComp);
-  //   this.message = this.childComp.childMessage;
-  //   this.cd.detectChanges(); // Hacky!
-  // }
+  // Property Binding
+  imgUrl: string = "https://chocolates.com.pe/wp-content/uploads/2019/02/ole-ole.png";
 
-  // constructor(private cd: ChangeDetectorRef) {
-  //   // console.log(this.childComp);
-  // }
+  // Class Binding
+  trueFalse: boolean = false;
 
-  fromChildOutput!: string;
-
-  constructor() {
-    // console.log(this.childComp);
+  // Event Binding
+  buttonClick(): void {
+    console.log("Ole Ole");
   }
 
-  receiveMessage(eventMessage: string) {
-    console.log(eventMessage);
-    this.fromChildOutput = eventMessage;
+  // Event Filtering
+  onKeyUp(eventObject: any) {
+    if (eventObject.keyCode === 13) {
+      console.log("Enter key pressed");
+    }
   }
+
+  onKeyUp2() {
+    console.log("Enter key pressed");
+  }
+
+
 }
