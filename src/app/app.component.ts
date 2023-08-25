@@ -33,5 +33,19 @@ export class AppComponent {
     console.log("Enter key pressed");
   }
 
+  // Template Variable
+  // js-manier
+  onKeyUp3(event: any) {
+    // Waarde van input-tag verkrijgen
+    console.log(event.target.value);
+  }
+
+  // Angular manier
+  onKeyUp4(inputWaarde: HTMLInputElement) {
+    // Waarde van input-tag verkrijgen
+    console.log(inputWaarde.value);
+  }
+
+
 
 }

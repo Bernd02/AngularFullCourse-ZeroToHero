@@ -28,3 +28,12 @@
 <input type="text" (keyup)="onKeyUp($event)"><br>
 <!-- Hier gebeurt het > triggered enkel op .enter -->
 <input type="text" (keyup.enter)="onKeyUp2()"><br>
+
+<!-- Template variable -->
+<!-- Waarde van input-tag doorgeven -->
+<!-- JS manier -->
+<input type="text" (keyup.enter)="onKeyUp3($event)"><br>
+
+<!-- Angular manier -->
+<!-- #variabele -->
+<input type="text" (keyup.enter)="onKeyUp4(inputTag)" #inputTag><br>
