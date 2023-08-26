@@ -13,6 +13,7 @@ import { TaskTwoWayDataBindingComponent } from './task-two-way-data-binding/task
 import { DirectivesNgifNgforComponent } from './directives-ngif-ngfor/directives-ngif-ngfor.component';
 import { DirectivesNgswitchcaseComponent } from './directives-ngswitchcase/directives-ngswitchcase.component';
 import { DirectivesNgstyleComponent } from './directives-ngstyle/directives-ngstyle.component';
+import { DirectivesNgclassComponent } from './directives-ngclass/directives-ngclass.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DirectivesNgstyleComponent } from './directives-ngstyle/directives-ngst
     TaskTwoWayDataBindingComponent,
     DirectivesNgifNgforComponent,
     DirectivesNgswitchcaseComponent,
-    DirectivesNgstyleComponent
+    DirectivesNgstyleComponent,
+    DirectivesNgclassComponent
   ],
   imports: [
     BrowserModule,

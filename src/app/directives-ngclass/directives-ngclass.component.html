@@ -1,0 +1,10 @@
+<p>NgClass Directive</p>
+
+<h1 [class.main]="isActive" [class.text-weight]="isActive">Angular</h1>
+
+<h1 [ngClass]="{
+    'main': isActive,
+    'text-weight' : isActive
+}">
+    NgClass Directive
+</h1>
