@@ -14,6 +14,7 @@ import { DirectivesNgifNgforComponent } from './directives-ngif-ngfor/directives
 import { DirectivesNgswitchcaseComponent } from './directives-ngswitchcase/directives-ngswitchcase.component';
 import { DirectivesNgstyleComponent } from './directives-ngstyle/directives-ngstyle.component';
 import { DirectivesNgclassComponent } from './directives-ngclass/directives-ngclass.component';
+import { DirectivesTaskComponent } from './directives-task/directives-task.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DirectivesNgclassComponent } from './directives-ngclass/directives-ngcl
     DirectivesNgifNgforComponent,
     DirectivesNgswitchcaseComponent,
     DirectivesNgstyleComponent,
-    DirectivesNgclassComponent
+    DirectivesNgclassComponent,
+    DirectivesTaskComponent
   ],
   imports: [
     BrowserModule,

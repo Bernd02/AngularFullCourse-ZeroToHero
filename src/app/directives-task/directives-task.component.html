@@ -1,0 +1,44 @@
+<p>directives-task</p>
+
+<div class="form-area">
+    <h3>User Details</h3>
+    <br><br>
+
+    <input [(ngModel)]="name" type="text" placeholder="Name">
+    <br><br>
+
+    <input [(ngModel)]="email" type="email" placeholder="E-mail">
+    <br><br>
+
+    <textarea [(ngModel)]="address" cols=" 30" rows="10" placeholder="Address"></textarea>
+    <br><br>
+
+    <button (click)="onClick()">Save Changes</button>
+</div>
+
+<div *ngIf="userArray.length > 0; else noData">
+    <div class="table-area">
+        <table width="500">
+            <thead>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of userArray; let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.address}}</td>
+                    <td><button (click)="onDelete(i)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<ng-template #noData>
+    <h4>No Data to Show</h4>
+</ng-template>
