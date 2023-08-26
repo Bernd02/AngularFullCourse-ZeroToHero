@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { TaskTwoWayDataBindingComponent } from './task-two-way-data-binding/task-two-way-data-binding.component';
+import { DirectivesNgifNgforComponent } from './directives-ngif-ngfor/directives-ngif-ngfor.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TaskTwoWayDataBindingComponent } from './task-two-way-data-binding/task
     NavbarComponent,
     PostComponent,
     PostListComponent,
-    TaskTwoWayDataBindingComponent
+    TaskTwoWayDataBindingComponent,
+    DirectivesNgifNgforComponent
   ],
   imports: [
     BrowserModule,
