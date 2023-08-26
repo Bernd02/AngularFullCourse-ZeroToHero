@@ -12,6 +12,7 @@ import { TwoWayDataBindingTheoryComponent } from './two-way-data-binding-theory/
 import { TaskTwoWayDataBindingComponent } from './task-two-way-data-binding/task-two-way-data-binding.component';
 import { DirectivesNgifNgforComponent } from './directives-ngif-ngfor/directives-ngif-ngfor.component';
 import { DirectivesNgswitchcaseComponent } from './directives-ngswitchcase/directives-ngswitchcase.component';
+import { DirectivesNgstyleComponent } from './directives-ngstyle/directives-ngstyle.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DirectivesNgswitchcaseComponent } from './directives-ngswitchcase/direc
     TwoWayDataBindingTheoryComponent,
     TaskTwoWayDataBindingComponent,
     DirectivesNgifNgforComponent,
-    DirectivesNgswitchcaseComponent
+    DirectivesNgswitchcaseComponent,
+    DirectivesNgstyleComponent
   ],
   imports: [
     BrowserModule,
