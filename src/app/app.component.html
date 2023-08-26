@@ -17,7 +17,25 @@
 <hr>
 <button (click)="addNew()">Add New Data</button>
 
-<div *ngIf="objArray.length > 0">
+<!-- <div *ngIf="objArray.length > 0; else noData"> -->
+<!-- <ul> -->
+<!-- index = een keyword -->
+<!-- <li *ngFor="let post of objArray; let i = index"> -->
+<!-- {{post | json}} -->
+<!-- {{i}} - {{post.postTitle}} -->
+<!-- <button (click)="onDelete(i)">Delete</button> -->
+<!-- </li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+<!-- <div *ngIf="objArray.length === 0">
+    <p>No data to fetch...</p>
+</div> -->
+
+<!-- -------------------------------------------------- -->
+<div *ngIf="objArray.length > 0; then postList else noData"></div>
+
+<ng-template #postList>
     <ul>
         <!-- index = een keyword -->
         <li *ngFor="let post of objArray; let i = index">
@@ -26,8 +44,8 @@
             <button (click)="onDelete(i)">Delete</button>
         </li>
     </ul>
-</div>
+</ng-template>
 
-<div *ngIf="objArray.length === 0">
+<ng-template #noData>
     <p>No data to fetch...</p>
-</div>
+</ng-template>
