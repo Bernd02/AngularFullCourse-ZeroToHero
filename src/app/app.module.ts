@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 import { TwoWayDataBindingTheoryComponent } from './two-way-data-binding-theory/two-way-data-binding-theory.component';
 import { TaskTwoWayDataBindingComponent } from './task-two-way-data-binding/task-two-way-data-binding.component';
 import { DirectivesNgifNgforComponent } from './directives-ngif-ngfor/directives-ngif-ngfor.component';
@@ -17,6 +18,7 @@ import { DirectivesNgifNgforComponent } from './directives-ngif-ngfor/directives
     NavbarComponent,
     PostComponent,
     PostListComponent,
+    DataBindingComponent,
     TwoWayDataBindingTheoryComponent,
     TaskTwoWayDataBindingComponent,
     DirectivesNgifNgforComponent

@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+
+<!-- childProp = @Input -->
+<!-- messageEvent = @Output -->
+<!-- $ is hier wel verplicht -->
+<app-post [childProp]="parentMessage" (messageEvent)="receiveMessage($event)"></app-post>
+
+<!-- <p> {{message}} </p> -->
+
+<p>{{fromChildOutput}}</p>
