@@ -17,11 +17,17 @@
 <hr>
 <button (click)="addNew()">Add New Data</button>
 
-<ul>
-    <!-- index = een keyword -->
-    <li *ngFor="let post of objArray; let i = index">
-        <!-- {{post | json}} -->
-        {{i}} - {{post.postTitle}}
-        <button (click)="onDelete(i)">Delete</button>
-    </li>
-</ul>
+<div *ngIf="objArray.length > 0">
+    <ul>
+        <!-- index = een keyword -->
+        <li *ngFor="let post of objArray; let i = index">
+            <!-- {{post | json}} -->
+            {{i}} - {{post.postTitle}}
+            <button (click)="onDelete(i)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="objArray.length === 0">
+    <p>No data to fetch...</p>
+</div>
