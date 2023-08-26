@@ -1,1 +1,27 @@
 <!-- <app-task-two-way-data-binding></app-task-two-way-data-binding> -->
+
+<p>{{postArray}}</p>
+
+<ul *ngIf="toonArray">
+    <li *ngFor="let post of postArray">
+        {{post}}
+    </li>
+</ul>
+
+
+<!-- -------------------------------------------------- -->
+<!-- 
+    Objext Array
+    > converteren naar json-formaat
+-->
+<hr>
+<button (click)="addNew()">Add New Data</button>
+
+<ul>
+    <!-- index = een keyword -->
+    <li *ngFor="let post of objArray; let i = index">
+        <!-- {{post | json}} -->
+        {{i}} - {{post.postTitle}}
+        <button (click)="onDelete(i)">Delete</button>
+    </li>
+</ul>
