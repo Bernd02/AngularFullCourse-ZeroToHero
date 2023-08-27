@@ -19,6 +19,9 @@ import { PipesComponent } from './pipes/pipes.component';
 import { AppendPipe } from './pipes/append.pipe';
 import { AppendCliPipe } from './pipes/append-cli.pipe';
 import { SummaryPipe } from './pipes/summary.pipe';
+import { PostUser1Component } from './post-user1/post-user1.component';
+import { PostUser2Component } from './post-user2/post-user2.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -38,13 +41,19 @@ import { SummaryPipe } from './pipes/summary.pipe';
     AppendPipe,
     AppendCliPipe,
     SummaryPipe,
+    PostUser1Component,
+    PostUser2Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    // 1 enkele instantie! > Singleton
+    // Op deze manier is geen @Inject decorator nodig
+    // PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
