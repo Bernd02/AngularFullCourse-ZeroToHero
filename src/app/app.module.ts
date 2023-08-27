@@ -15,6 +15,10 @@ import { DirectivesNgswitchcaseComponent } from './directives-ngswitchcase/direc
 import { DirectivesNgstyleComponent } from './directives-ngstyle/directives-ngstyle.component';
 import { DirectivesNgclassComponent } from './directives-ngclass/directives-ngclass.component';
 import { DirectivesTaskComponent } from './directives-task/directives-task.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { AppendPipe } from './pipes/append.pipe';
+import { AppendCliPipe } from './pipes/append-cli.pipe';
+import { SummaryPipe } from './pipes/summary.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { DirectivesTaskComponent } from './directives-task/directives-task.compo
     DirectivesNgswitchcaseComponent,
     DirectivesNgstyleComponent,
     DirectivesNgclassComponent,
-    DirectivesTaskComponent
+    DirectivesTaskComponent,
+    PipesComponent,
+    AppendPipe,
+    AppendCliPipe,
+    SummaryPipe,
   ],
   imports: [
     BrowserModule,
