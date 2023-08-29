@@ -22,6 +22,8 @@ import { SummaryPipe } from './pipes/summary.pipe';
 import { PostUser1Component } from './post-user1/post-user1.component';
 import { PostUser2Component } from './post-user2/post-user2.component';
 import { PostService } from './services/post.service';
+import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { PostService } from './services/post.service';
     SummaryPipe,
     PostUser1Component,
     PostUser2Component,
+    FormTemplateDrivenComponent,
+    FormReactiveComponent,
   ],
   imports: [
     BrowserModule,
