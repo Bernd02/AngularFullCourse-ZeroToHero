@@ -25,6 +25,7 @@ import { PostService } from './services/post.service';
 import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
+import { FormCustomValidationComponent } from './form-custom-validation/form-custom-validation.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { FormBuilderComponent } from './form-builder/form-builder.component';
     FormTemplateDrivenComponent,
     FormReactiveComponent,
     FormBuilderComponent,
+    FormCustomValidationComponent,
   ],
   imports: [
     BrowserModule,

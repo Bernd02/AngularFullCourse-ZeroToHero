@@ -1,0 +1,37 @@
+<div class="container">
+    <form [formGroup]="Form" (ngSubmit)="onSumbit()">
+        <!-- UserName -->
+        <div class="form-group">
+            <label>Username</label>
+            <input class="form-control" type="text" formControlName="UserName">
+
+            <!-- Validation -->
+            <div *ngIf="UserName.touched && UserName.invalid">
+                <div class="alert alert-danger" *ngIf="UserName.errors?.['required']">
+                    Username is required.
+                </div>
+                <div class="alert alert-danger" *ngIf="UserName.errors?.['minlength']">
+                    Username minlength is 5.
+                </div>
+                <div class="alert alert-danger" *ngIf="UserName.errors?.['noSpaceValidator']">
+                    Username cannot have a space.
+                </div>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" type="password" formControlName="Password">
+
+            <!-- Validation -->
+            <div *ngIf="Password.touched && Password.invalid">
+                <div class="alert alert-danger" *ngIf="Password.errors?.['required']">
+                    Password is required.
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
