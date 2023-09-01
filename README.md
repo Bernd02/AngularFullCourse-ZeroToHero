@@ -1,6 +1,6 @@
 # Angular Full Course - Complete Zero to Hero
 
-Tutorial - https://www.youtube.com/watch?v=CGLdH5ORX-Y
+Tutorial - OctAcademy - https://www.youtube.com/watch?v=CGLdH5ORX-Y
 
 ## Topics
 
