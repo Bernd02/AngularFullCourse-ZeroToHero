@@ -4,7 +4,8 @@ Tutorial - OctAcademy - https://www.youtube.com/watch?v=CGLdH5ORX-Y
 
 ## Topics
 
-Angular A to Z
+Angular - TypeScript  
+Complete Course
 
 ## Notes
 
