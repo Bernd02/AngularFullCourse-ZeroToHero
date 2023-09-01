@@ -10,7 +10,7 @@ Angular A to Z
 
 Refresher for Angular.  
 I learned Angular through the **Tour of Heroes** tutorial from 
-https://angular.io/docs   
+https://angular.io/docs.   
 I processed this course as a refresher (and more) for the Angular Framework.
 
 This project is not a complete standalone application, but a collection of the different topics with small and easy examples of the principles and functions in the **Angular Framework**. I've listed them mostly in different angular components.
