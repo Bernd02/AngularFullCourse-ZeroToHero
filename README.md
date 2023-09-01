@@ -14,7 +14,7 @@ I learned Angular through the **Tour of Heroes** tutorial from
 https://angular.io/docs.   
 I processed this course as a refresher (and more) for the Angular Framework.
 
-This project is not a complete standalone application, but a collection of the different topics with small and easy examples of the principles and functions in the **Angular Framework**. I've listed them mostly in different angular components.
+This project is an application in which I've listed all the topics in separate Angular Components. They show the different principles and functions in the **Angular Framework** using small and easy examples.
 
 I find that full, high quality video-tutorials provide all kinds of **meta-data** in the form of **tips and tricks** you can hardly acquire from just reading the documentation. So in that regard this, tutorial was beneficial to me.
 
