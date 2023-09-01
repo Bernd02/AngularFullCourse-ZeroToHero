@@ -26,6 +26,11 @@ import { FormTemplateDrivenComponent } from './form-template-driven/form-templat
 import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 import { FormCustomValidationComponent } from './form-custom-validation/form-custom-validation.component';
+import { RoutingComponent } from './routing/routing.component';
+import { RoutingPostListComponent } from './routing-post-list/routing-post-list.component';
+import { RoutingHomeComponent } from './routing-home/routing-home.component';
+import { RoutingSinglePostComponent } from './routing-single-post/routing-single-post.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +56,11 @@ import { FormCustomValidationComponent } from './form-custom-validation/form-cus
     FormReactiveComponent,
     FormBuilderComponent,
     FormCustomValidationComponent,
+    RoutingComponent,
+    RoutingPostListComponent,
+    RoutingHomeComponent,
+    RoutingSinglePostComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
